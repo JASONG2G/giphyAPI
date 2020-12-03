@@ -99,4 +99,9 @@ form {
   padding: 0 25px;
 }
 
-
+.delete {
+  background: #9361bf;
+  padding: 11px;
+  cursor: pointer;
+  color: white;
+}

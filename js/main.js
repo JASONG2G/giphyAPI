@@ -141,6 +141,8 @@ function cardFooter(rating) {
   ratingValue.setAttribute("class", "value");
   ratingType.setAttribute("class", "type");
   footerDelete.setAttribute("class", "card_delete");
+  // -Button
+  footerDelete.setAttribute("class","delete");
 
   // get value from arguments
   // -Rating
@@ -149,6 +151,8 @@ function cardFooter(rating) {
   // -Likes
   likesValue.textContent = "354";
   likesType.textContent = "Likes";
+  // -Delete
+  footerDelete.textContent = "Delete";
 
   // put all together
   // -level 2
@@ -159,9 +163,11 @@ function cardFooter(rating) {
   footerLikes.appendChild(likesValue);
   footerLikes.appendChild(likesType);
 
+
   // level 1
   footerContainer.appendChild(footerLikes);
   footerContainer.appendChild(footerRating);
+  footerContainer.appendChild(footerDelete);
   footerContainer.appendChild(footerDelete);
 
   // return result
