@@ -1,0 +1,102 @@
+:root {
+  --primary-background-color: #afafaf;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: var(--primary-background-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+form {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  padding: 30px 20px;
+  margin-bottom: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px); 
+  grid-gap: 1rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas:
+    "image"
+    "text"
+    "rating";
+
+  
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-family: roboto;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+.card_image {
+  grid-area: image;
+  background: url("https://news.ubc.ca/wp-content/uploads/2020/03/ben-o-bro-wpU4veNGnHg-unsplash-scaled.jpg");
+  background-size: cover;
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card_text {
+  grid-area: text;
+  margin: 25px;
+}
+
+.card_text .date {
+  color: rgb(255, 7, 110);
+  font-size: 13px;
+}
+
+.card_text p {
+  color: grey;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.card_text h2 {
+  font-size: 28px;
+}
+
+.footer {
+  grid-area: rating;
+  display: flex;
+  background-color: rgb(255, 7, 110);
+  color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card_rating {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 0 25px;
+}
+
+

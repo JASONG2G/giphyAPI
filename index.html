@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>API calls</title>
+  </head>
+  <body>
+    <form id="search_form">
+      <input required type="text" placeholder="Enter search term..." />
+      <button>Go!</button>
+    </form>
+    <div class="cards">
+      <div class="card">
+        <div class="card_image"></div>
+        <div class="card_text">
+          <span class="date">date</span>
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <div class="footer">
+          <div class="card_likes">
+            <div class="value">234</div>
+            <div class="type">Likes</div>
+          </div>
+          <div class="card_rating">
+            <div class="value">PG-13</div>
+            <div class="type">Rating</div>
+          </div>
+          <div class="card_delete">
+            <div class="value">Button</div>
+            <div class="type">Delete</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
